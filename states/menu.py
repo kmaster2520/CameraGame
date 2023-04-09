@@ -20,7 +20,7 @@ class MenuScene(Scene):
         self.do_show_credits = False
         self.do_start_game = False
 
-    def mousedown_event(self, event, mouse_pos):
+    def mousedown_event(self, mouse_pos):
         if self.screen_name == 'main':
             if self.rect_start_game.collidepoint(mouse_pos):
                 self.do_start_game = True

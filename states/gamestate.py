@@ -12,17 +12,17 @@ class Scene:
     def tick(self, screen, game_stack):
         pass
 
-    def mousedown_event(self, event, mouse_pos):
-        print(event)
+    def mousedown_event(self, mouse_pos):
+        print(mouse_pos)
 
-    def mouseup_event(self, event, mouse_pos):
-        print(event)
+    def mouseup_event(self, mouse_pos):
+        print(mouse_pos)
 
-    def keydown_event(self, event):
-        print(event)
+    def keydown_event(self, key):
+        print(key)
 
-    def keyup_event(self, event):
-        print(event)
+    def keyup_event(self, key):
+        print(key)
 
 
 
