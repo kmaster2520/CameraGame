@@ -15,6 +15,11 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+            break
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            game_stack[-1].mousedown_event(event, pygame.mouse.get_pos())
+        elif event.type == pygame.MOUSEBUTTONUP:
+            game_stack[-1].mouseup_event(event, pygame.mouse.get_pos())
 
     screen.fill(BLACK)
 
